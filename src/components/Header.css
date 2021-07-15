@@ -11,9 +11,9 @@
 }
 .search-section
 {
-    box-shadow: .1em .1em 2em .5em rgb(0, 0, 0);
+    box-shadow: .1em .1em .75em .2em rgb(0, 0, 0);
     width:90%;
-    border-radius: 1em;
+    border-radius: .5em;
     margin: 5vmin auto 0 auto;
     font-size: 1.75em;
     text-align: center;
@@ -27,7 +27,7 @@
 }
 .search-heading
 {
-    font-size: 1.75em;
+    font-size: 7vmin;
     margin-bottom: 1vh;
 
 }

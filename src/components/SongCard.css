@@ -10,11 +10,7 @@
     transition: all.3s;
     color: rgb(216, 216, 216);
 }
-.card:hover
-{
-    transform: scale(1.05,1.05);
 
-}
 .song-name
 {
     font-size: 2.5em;

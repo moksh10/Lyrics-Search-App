@@ -7,7 +7,8 @@ function Header() {
     return (
         <>
         <div className="logo">Lyrics Search</div>
-        <form className="search-section">
+        <form className="search-section" data-aos="fade-down"
+        data-aos-duration="1000">
             <div className="search-heading"><div className="icon">{icon}</div>Search for any song</div>
             <div className="getAny">Get the lyrics for any song</div>
             <input type="text" placeholder="Song title..." className="search-box" />
