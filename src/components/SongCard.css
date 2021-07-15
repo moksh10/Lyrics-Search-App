@@ -1,0 +1,49 @@
+.card
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: .25em .25em 1.5em .5em black;
+    background-color: rgb(27, 27, 27);
+    padding:1em;
+    border-radius: .5em;
+    transition: all.3s;
+    color: rgb(216, 216, 216);
+}
+.card:hover
+{
+    transform: scale(1.05,1.05);
+
+}
+.song-name
+{
+    font-size: 2.5em;
+    font-weight:500;
+    white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+
+}
+.card .track,.album
+{
+    
+    font-size: 1em;
+}
+.card .view-lyrics
+{
+    background-color: black;
+    
+    padding:.5em;
+    border:0;
+    font-size: 1em;
+    cursor: pointer;
+    height:30%;
+    border-radius: .25em;
+    transition: all .3s;
+    color: rgb(160, 160, 160);
+}
+.view-lyrics:hover
+{
+    opacity: .5;
+
+}

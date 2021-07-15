@@ -1,11 +1,12 @@
 *
 {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(32, 32, 32);
+  background-color: rgb(24, 24, 24);
   color:rgb(240, 240, 240);
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;

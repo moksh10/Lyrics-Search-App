@@ -1,6 +1,6 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMusic } from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faMusic} from '@fortawesome/free-solid-svg-icons'
 import './Header.css'
 function Header() {
     const icon = <FontAwesomeIcon icon={faMusic} />
