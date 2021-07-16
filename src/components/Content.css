@@ -1,9 +1,45 @@
 .container
 {
     width:90%;
-    margin:4vh auto 4vh auto;
+    margin:5vmin auto 12vmin auto;
     display: grid;
-    grid-gap:2em 2em;
-    grid-template-columns: repeat(2,minmax(1px,1fr));
-    grid-auto-rows: 30vh;
+    grid-gap:5vmin 5vmin;
+    grid-template-columns: repeat(2,minmax(10px,1fr));
+    grid-auto-rows: 38vmin;
+}
+.container-2
+{
+    
+    width: 90%;
+    margin:5vmin auto 12vmin auto;
+    height:10vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner,.error
+{
+    width:100%;
+    height: 100%;
+    text-align: center;
+    font-size: 9vmin;
+    color:grey;
+}
+.error
+{
+    color: rgb(167, 167, 167);
+    font-size: 6vmin;
+}
+
+.footer
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(8, 8, 8);
+    text-align: center;
+    height:8vmin;
+    padding: 1.5vmin;
+    font-size: 3.5vmin;
 }

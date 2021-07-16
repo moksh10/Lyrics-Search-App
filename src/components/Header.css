@@ -1,69 +1,78 @@
 .logo
 {
-    background-color: rgb(31, 31, 31);
+    background-color: rgb(14, 14, 14);
     text-align: center;
-    padding: .75em;
+    padding: 2vmin;
     font-weight: bold;
-    font-size: 2em;
-    letter-spacing: .1em;
-    font-family:Arial, Helvetica, sans-serif;
-    height:10vh;
+    font-size: 4.5vmin;
+    letter-spacing: .25vmin;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height:10vmin;
+    
 }
 .search-section
 {
-    box-shadow: .1em .1em .75em .2em rgb(0, 0, 0);
+    box-shadow: .1vmin .1vmin 4vmin .5vmin rgb(0, 0, 0);
     width:90%;
-    border-radius: .5em;
+    border-radius: 3vmin;
     margin: 5vmin auto 0 auto;
-    font-size: 1.75em;
+    font-size: 5vmin;
     text-align: center;
-    padding: 1.25em;
+    padding: 3vmin;
     background-color: rgb(27, 27, 27);
 }
 .icon
 {
     display: inline-block;
-    margin-right: .2em;
+    margin-right: 1vmin;
 }
 .search-heading
 {
     font-size: 7vmin;
-    margin-bottom: 1vh;
+    margin-bottom: 1vmin;
 
 }
 .getAny
 {
-    font-size: .75em;
+    font-size: 3vmin;
 }
 .search-box
 {
-    margin-top: 2.5vh;
+    margin-top: 2.5vmin;
     width:95%;
-    height:2.25em;
+    height:6.9vmin;
     border: 0;
-    border-radius: .25em;
-    padding: .5em;
-    font-size: .75em;
+    border-radius: 1.25vmin;
+    padding: 2.2vmin;
+    background-color: rgb(0, 0, 0);
+    font-size: 3.5vmin;
+    transition: all.3s;
+    color:white;
+    border:.2vmin solid grey;
 }
 .search-box:focus
 {
-    outline: 0;
+    outline:0;
+    border:.3vmin solid grey;
+    box-shadow: .1vmin .1vmin 1vmin .5vmin rgb(43, 43, 43);
+
 }
 .button
 {
     width: 95%;
-    margin-top: 2vh;
-    height:2em;
+    margin-top: 2.25vmin;
+    height:7vmin;
     border: 0;
-    border-radius: .25em;
+    border-radius: 1vmin;
     background-color:rgb(0, 0, 0);
     color: rgb(160, 160, 160);
-    font-size: 1em;
+    font-size: 4vmin;
     cursor: pointer;
     transition: all .3s;
 }
 .button:hover
 {
     opacity: .5;
+    box-shadow: .1vmin .1vmin 2vmin .5vmin rgb(54, 54, 54);
 
 }
