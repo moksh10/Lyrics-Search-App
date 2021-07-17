@@ -1,25 +1,71 @@
 import React from 'react'
 import axios from 'axios'
+import { useState,useEffect } from 'react'
 import './Lyrics.css'
+import { useHistory, useParams } from 'react-router'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faSpinner} from '@fortawesome/free-solid-svg-icons'
 function Lyrics() {
-    return (
+    
+    let [loading,setLoading]=useState(0)
+    let [data,setData]=useState({})
+    let [lyric,setLyric]=useState("")
+    const hist=useHistory()
+    const {id}=useParams()
+    function renderHome()
+    {
+        hist.goBack()
+    }
+    let ele
+    if(loading===0)
+    {
+        ele=<FontAwesomeIcon icon={faSpinner} spin/>
+    
+
+    }
+    
+    else if(loading===2)
+    {
+        ele="Error! Please Check Your Internet Connection"
+    }
+    useEffect(()=>{
+        setLoading(0)
+        let arr=id.split('+')
+        getData(arr[2])
+        setData({...data,name:arr[0],artist:arr[1]})
         
+    },[])
+    const getData=(searchId)=>{
+        axios.get(`https://api.musixmatch.com/ws/1.1/track.lyrics.get?format=jsonp&callback=callback&track_id=${searchId}&apikey=84a856b465795183a36903b5381cdf2a`,{timeout:10000})
+    .then(response=>{
+      let obj=JSON.parse(response.data.substring(9,response.data.length-2))
+      console.log(obj)
+      let text=obj.message.body.lyrics.lyrics_body
+      let lyricBody=text.substring(0,text.length-70)
+      setLyric(lyricBody)
+      setTimeout(()=>setLoading(1),1000)
+      
+      
+    })
+    .catch(err=>{
+      console.log(err)
+      setLoading(2)
+      
+      
+
+    })
+
+    }
+
+    return (
+
         <>
             <div className="logo">Lyrics Search</div>
             <div className="lyrics-container">
-                <button className="back-button">Go Back</button>
+                <button className="back-button" onClick={renderHome}>Go Back</button>
                 <div className="lyric-container">
-                    <div className="lyric-heading">The unforgiven</div>
-                    <div className="lyric-text">I made this project to get familiar with react. Context-api is used instead of redux as the project is simple. Bootstrap-MD is used for styling. Axios is used for making all the requests.
-On the landing page a search component is displayed along with the Top 10 songs of India at that moment.
-On the search field, you enter the song you want to see the lyrics of.
-After submitting the form, the matching results will be displayed. Click on the lyrics button of your song.
-you will be directed to the lyrics page of that song.</div>
-                </div>
-                <div className="song-info">
-                    <div>Album Id: </div>
-                    <div>Song Genre: Heavy Metal</div>
-                    <div>Release date: 12-01-2000</div>
+                    <div className="lyric-heading">{data.name} by {data.artist}</div>
+                    <div className={loading===1?"lyric-text":"lyric-no-text"}>{loading===1?lyric:ele}</div>
                 </div>
             </div>
             <div className="footer">Created By: Moksh Teng</div>

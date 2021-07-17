@@ -51,18 +51,14 @@
 }
 .lyric-container .lyric-heading
 {
-    height:11vmin;
+    height:max-content;
     border-bottom: .25vmin solid rgb(105, 105, 105);
     padding: 2.1vmin;
     font-size: 5.5vmin;
     font-weight: bold;
-    white-space:nowrap;
-  overflow-x: auto;
+  
 
 }
-.lyric-heading::-webkit-scrollbar { 
-    display: none;
- }
 .lyric-container .lyric-text
 {
     padding: 2.5vmin;
@@ -72,21 +68,17 @@
     letter-spacing: .1vmin;
 
 }
-.lyrics-container .song-info
+.lyric-container .lyric-no-text
 {
-    border-radius: .2vmin;
-    width: 100%;
-    letter-spacing: .15vmin;
+    height:20vmin;
+   text-align: center;
+   padding-top: 1vmin;
+    font-size: 5vmin;
 }
-.song-info>div
+.lyric-error
 {
-    border: .2vmin solid grey;
-    padding: 2.5vmin;
-    font-size: 3vmin;
-    font-weight: 600;
-
+    font-size:6vmin;
 }
-
 .footer
 {
     bottom: 0;

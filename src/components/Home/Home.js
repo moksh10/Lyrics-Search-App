@@ -6,22 +6,22 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 import axios from 'axios'
 function Home() {
-    let [query,setQuery]=useState("");
+ let [query,setQuery]=useState("");
   let [loading,setLoading]=useState(0)
   let [songlist,setSonglist]=useState([])
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-    getData("")
+    getTracks("")
   }, []);
   function onSubmit(e)
   {
     e.preventDefault()
     setLoading(0);
-    getData(query)
+    getTracks(query)
     
   }
- function getData(searchTerm)
+ function getTracks(searchTerm)
   {
     axios.get(`https://api.musixmatch.com/ws/1.1/track.search?format=jsonp&callback=callback&q_track=${searchTerm}&f_has_lyrics=1&s_track_rating=desc&quorum_factor=1&page_size=10&page=1&apikey=84a856b465795183a36903b5381cdf2a`,{timeout:10000})
     .then(response=>{
