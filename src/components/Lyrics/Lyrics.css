@@ -1,0 +1,100 @@
+.logo
+{
+
+    background-color: rgb(14, 14, 14);
+    text-align: center;
+    padding: 2vmin;
+    font-weight: bold;
+    font-size: 4.5vmin;
+    letter-spacing: .25vmin;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height:10vmin;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+.lyrics-container
+{
+    margin: 5vmin auto 15vmin auto;
+    width:90%;
+    display: grid;
+    grid-gap:5vmin;
+    color: rgb(182, 182, 182);
+}
+.lyrics-container .back-button
+{
+
+    width: 15vmin;
+    height:7vmin;
+    color: rgb(179, 179, 179);
+    border: 0;
+    font-size: 2.7vmin;
+    border-radius: .8vmin;
+    background-color: black;
+    cursor: pointer;
+    transition: all .3s;
+}
+.back-button:hover
+{
+    opacity: .5;
+    box-shadow: .1vmin .1vmin 2vmin .7vmin rgb(41, 41, 41);
+
+}
+.lyrics-container .lyric-container
+{
+    width: 100%;
+    box-shadow: .2vmin .2vmin 4vmin .7vmin black;
+    border-radius: 1.2vmin;
+    display: flex;
+    flex-direction: column;
+}
+.lyric-container .lyric-heading
+{
+    height:11vmin;
+    border-bottom: .25vmin solid rgb(105, 105, 105);
+    padding: 2.1vmin;
+    font-size: 5.5vmin;
+    font-weight: bold;
+    white-space:nowrap;
+  overflow-x: auto;
+
+}
+.lyric-heading::-webkit-scrollbar { 
+    display: none;
+ }
+.lyric-container .lyric-text
+{
+    padding: 2.5vmin;
+    line-height: 4.75vmin;
+    font-size: 3vmin;
+    color: rgb(206, 206, 206);
+    letter-spacing: .1vmin;
+
+}
+.lyrics-container .song-info
+{
+    border-radius: .2vmin;
+    width: 100%;
+    letter-spacing: .15vmin;
+}
+.song-info>div
+{
+    border: .2vmin solid grey;
+    padding: 2.5vmin;
+    font-size: 3vmin;
+    font-weight: 600;
+
+}
+
+.footer
+{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(8, 8, 8);
+    text-align: center;
+    height:8vmin;
+    padding: 1.5vmin;
+    font-size: 3.5vmin;
+}

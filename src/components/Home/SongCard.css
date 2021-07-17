@@ -35,10 +35,13 @@
 .card .view-lyrics
 {
     background-color: black;
-    padding:.5vmin;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 2vmin;
     border:0;
     font-size: 3vmin;
     cursor: pointer;
+    letter-spacing: .05vmin;
     height:8vmin;
     border-radius: 1.25vmin;
     transition: all .3s;
