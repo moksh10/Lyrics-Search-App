@@ -18,11 +18,17 @@ function Content(props) {
         return <SongCard key={value.track.track_id} id={value.track.track_id} songname={songname[0]} artist_name={value.track.artist_name} album_name={value.track.album_name}/>
     })
     }
-    else
+    else if(props.loading===2)
     {
         ele=<p className="error" data-aos="fade-up"
         data-aos-duration="1200">Error! Please Check Your Internet Connection</p>
 
+    }
+    else
+    {
+        
+        ele=<p className="error" data-aos="fade-up"
+        data-aos-duration="1200">No Results!</p>
     }
     return (
         <>

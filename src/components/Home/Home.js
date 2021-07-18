@@ -25,11 +25,20 @@ function Home() {
   {
     axios.get(`https://api.musixmatch.com/ws/1.1/track.search?format=jsonp&callback=callback&q_track=${searchTerm}&f_has_lyrics=1&s_track_rating=desc&quorum_factor=1&page_size=10&page=1&apikey=84a856b465795183a36903b5381cdf2a`,{timeout:10000})
     .then(response=>{
+      if(response.status===404)
+      {
+        setLoading(3)
+        return
+      }
       let obj=JSON.parse(response.data.substring(9,response.data.length-2))
       let arr=obj.message.body.track_list
+      if(arr.length===0)
+      {
+        setLoading(3)
+        return
+      }
       setSonglist([...arr])
-      setTimeout(()=>setLoading(1),1000)
-      setQuery("")
+      setTimeout(()=>{setQuery("");setLoading(1);},1000)
     })
     .catch(err=>{
       console.log(err)
