@@ -14,7 +14,7 @@ function SongCard(props) {
             <div className="song-name" title={props.songname}>{props.songname}</div>
             <div className="artist" title={props.artist_name}>{micIcon} Artist: {props.artist_name}</div>
             <div className="album" title={props.album_name}>{albumIcon} Album: {props.album_name}</div>
-            <Link to={`lyrics/${props.songname}+${props.artist_name}+${props.id}`} className="view-lyrics">{arrowIcon} View Lyrics</Link>
+            <Link to={`${process.env.PUBLIC_URL + '/'}lyrics/${props.songname}+${props.artist_name}+${props.id}`} className="view-lyrics">{arrowIcon} View Lyrics</Link>
         </div>
     )
 }
