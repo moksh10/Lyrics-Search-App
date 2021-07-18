@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Lyrics-Search-App/static/css/main.5991806c.chunk.css",
+    "main.js": "/Lyrics-Search-App/static/js/main.32ccfe3f.chunk.js",
+    "main.js.map": "/Lyrics-Search-App/static/js/main.32ccfe3f.chunk.js.map",
+    "runtime-main.js": "/Lyrics-Search-App/static/js/runtime-main.b3704b8b.js",
+    "runtime-main.js.map": "/Lyrics-Search-App/static/js/runtime-main.b3704b8b.js.map",
+    "static/css/2.7fc9bc2b.chunk.css": "/Lyrics-Search-App/static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.0875bb23.chunk.js": "/Lyrics-Search-App/static/js/2.0875bb23.chunk.js",
+    "static/js/2.0875bb23.chunk.js.map": "/Lyrics-Search-App/static/js/2.0875bb23.chunk.js.map",
+    "index.html": "/Lyrics-Search-App/index.html",
+    "static/css/2.7fc9bc2b.chunk.css.map": "/Lyrics-Search-App/static/css/2.7fc9bc2b.chunk.css.map",
+    "static/css/main.5991806c.chunk.css.map": "/Lyrics-Search-App/static/css/main.5991806c.chunk.css.map",
+    "static/js/2.0875bb23.chunk.js.LICENSE.txt": "/Lyrics-Search-App/static/js/2.0875bb23.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b3704b8b.js",
+    "static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.0875bb23.chunk.js",
+    "static/css/main.5991806c.chunk.css",
+    "static/js/main.32ccfe3f.chunk.js"
+  ]
+}
