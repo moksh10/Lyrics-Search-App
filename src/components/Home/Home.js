@@ -38,7 +38,8 @@ function Home() {
         return
       }
       setSonglist([...arr])
-      setTimeout(()=>{setQuery("");setLoading(1);},1000)
+      setQuery("")
+      setLoading(1);
     })
     .catch(err=>{
       console.log(err)
