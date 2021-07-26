@@ -76,8 +76,7 @@ function Lyrics() {
             <div className="logo">Lyrics Search</div>
             <div className="lyrics-container">
                 <button className="back-button" onClick={renderHome}>Go Back</button>
-                <div className="lyric-container" data-aos="fade-up"
-        data-aos-duration="1200">
+                <div className="lyric-container">
                     <div className="lyric-heading">{data.name} by {data.artist}</div>
                     <div className={loading===1?"lyric-text":"lyric-no-text"}>{loading===1?lyric:ele}</div>
                 </div>
